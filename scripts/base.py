@@ -529,11 +529,11 @@ def git_update(repo, is_no_errors=False, is_current_dir=False, git_owner=""):
   print("[git] update: " + repo)
   url = "https://github.com/ONLYOFFICE/" + repo + ".git"
   if (repo == "server"):
-    url = "https://github.com/thomisus/" + repo + ".git"
+    url = "https://github.com/nickun/server.git"
   if config.option("git-protocol") == "ssh":
     url = "git@github.com:ONLYOFFICE/" + repo + ".git"
     if (repo == "server"):
-      url = "git@github.com:thomisus/" + repo + ".git"
+      url = "git@github.com:nickun/server.git"
   folder = get_script_dir() + "/../../" + repo
   if is_current_dir:
     folder = repo
